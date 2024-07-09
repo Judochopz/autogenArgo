@@ -509,6 +509,9 @@ class OpenAIWrapper:
                     raise ImportError("Please install `cohere` to use the Groq API.")
                 client = CohereClient(**openai_config)
                 self._clients.append(client)
+            elif api_type is not None and api_type.startswith("argo"):
+                client = config["argo_client"]
+                self._clients.append(OpenAIClient(client))
             else:
                 client = OpenAI(**openai_config)
                 self._clients.append(OpenAIClient(client))
