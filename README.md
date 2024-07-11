@@ -9,6 +9,10 @@
 
 [![NuGet version](https://badge.fury.io/nu/AutoGen.Core.svg)](https://badge.fury.io/nu/AutoGen.Core)
 
+# Personnel modifications
+
+The purpose of this fork is to allow Autogen to work with a specific OpenAI wrapper class. This is meant to function along with /Judochopz/autoAgents repo.
+
 # AutoGen
 [📚 Cite paper](#related-papers).
 <!-- <p align="center">
